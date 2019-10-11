@@ -12,6 +12,9 @@ actionscript/bin
 .settings
 .project
 
+# Android Studio
+.idea
+
 # Android
 android/bin
 android/gen
@@ -20,6 +23,7 @@ android/lint.xml
 .classpath
 proguard-project.txt
 project.properties
+android/local.properties
 
 # Xcode
 xcuserdata
