@@ -55,10 +55,6 @@ public class Main extends Sprite {
         AirDeviceId.instance.addEventListener(AirDeviceIdEvent.RECEIVED_IDFA, onReceivedIDFA);
         var blocks:Array = [];
 
-	    blocks.push(new TestBlock("getID", function():void {
-		    var id:String = AirDeviceId.instance.getID("some_salt");
-            trace("ID is ", id);
-	    }));
         blocks.push(new TestBlock("getIDFV", function():void {
             var idfv:String = AirDeviceId.instance.getIDFV();
             trace("IDFV is ", idfv);

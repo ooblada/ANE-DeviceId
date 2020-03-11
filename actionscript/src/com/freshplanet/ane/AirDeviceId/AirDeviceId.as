@@ -44,18 +44,6 @@ import flash.events.EventDispatcher;
 		}
 
 		/**
-		 * Get device id
-		 * @param salt a developer specific salt
-		 */
-		public function getID( salt:String ) : String {
-
-			if (isSupported)
-				return _context.call( 'getID', salt ) as String;
-
-			return null;
-		}
-
-		/**
 		 * Get vendor identifier
 		 * @return
 		 */
